@@ -4,6 +4,22 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
+    role: "1ST Mandarin competition(年级组冠军)",
+    company: "Sekolah Harapn Bangsa, Tangerang",
+    description: "1ST place in a HSK 2 competition"
+  },
+  {
+    role: "2nd Mandarin competition(年级组亚军)",
+    company: "Sekolah Harapn Bangsa, Tangerang",
+    description: "2nd place in a HSK 3B competition"
+  },
+  {
+    role: "Outstanding in english",
+    company: "Sekolah Harapn Bangsa, Tangerang",
+    description: "Outstanding student awards in english (C2 proficient levels)"
+  },
+
+  {
     role: "IT Infrastructure Intern",
     company: "Mayora Group",
     description:
@@ -15,6 +31,7 @@ const experiences = [
     description:
       "Handled organization and event management, coordinating teams and logistics to deliver smooth, well-run events.",
   },
+  
 ];
 
 export default function Journey() {
