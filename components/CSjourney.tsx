@@ -43,6 +43,13 @@ const journeyData = [
   },
 ];
 
+const stats = [
+  { value: "3+", label: "Core Milestones" },
+  { value: "15+", label: "Tech Stack Stems" },
+  { value: "TOP 10", label: "Campus Honor" },
+  { value: "100%", label: "Deterministic Flow" },
+];
+
 export default function CSJourney() {
   const reduceMotion = useReducedMotion();
   const offset = reduceMotion ? 0 : 80;
@@ -50,8 +57,21 @@ export default function CSJourney() {
   return (
     <section
       id="cs-journey"
+      
       className="relative mx-auto max-w-6xl px-6 py-40 md:py-56"
     >
+        return (
+  <section
+    id="cs-journey"
+    className="relative mx-auto max-w-6xl px-6 pb-40 pt-0 md:pb-56"
+  >
+    
+
+    <div className="relative">
+      {}
+    </div>
+  </section>
+);
       <div className="relative">
         {/* Central dashed timeline */}
         <div
