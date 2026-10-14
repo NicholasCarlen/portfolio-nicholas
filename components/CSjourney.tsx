@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
+import { Badge } from "lucide-react";
+import { image } from "framer-motion/client";
 
 const PLACEHOLDER =
   "data:image/svg+xml;utf8," +
@@ -51,8 +53,9 @@ const journeyData = [
   {
     date: "2026",
     title: "Kith & Kin",
+    Badge: " 🏆 BISCOF (Binus Computer Science Festifal Top 16 Finalist)",
     description:
-      "A Community gathering app that gather niche hibbies and activities BISCOF (Binus Computer Science Festifal Top 16 Finalist) Kith and Kin enables you to Host an event, Join an Event, Monitor an event on one touch"
+      "A Community gathering app that gather niche hibbies and activities. Kith and Kin enables you to Host an event, Join an Event, Monitor an event on one touch"
       ,
       
     image: "/Kith&Kin-Image1.png",
