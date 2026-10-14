@@ -25,28 +25,38 @@ const stats = [
 
 const journeyData = [
   {
-    date: "2023",
-    title: "Milestone Title One",
+    date: "2025",
+    title: "READ A PLATE",
     description:
-      "Placeholder description. Replace this with a short paragraph about what you did, what you learned, and why it mattered.",
-    image: PLACEHOLDER,
-    alt: "Describe image one",
-  },
-  {
-    date: "2024",
-    title: "Milestone Title Two",
-    description:
-      "Placeholder description. Replace this with a short paragraph about what you did, what you learned, and why it mattered.",
-    image: PLACEHOLDER,
-    alt: "Describe image two",
+      "Read A plate was a first AI project with a java script backend project of mine, I was a project manager and also AI engeneer in this project",
+    image: "/ReadAPlate.png",
+    alt: "A YOLO V8 project that involes scripting and computer vision",
   },
   {
     date: "2025",
-    title: "Milestone Title Three",
+    title: "Cisco Packet Tracer",
     description:
-      "Placeholder description. Replace this with a short paragraph about what you did, what you learned, and why it mattered.",
-    image: PLACEHOLDER,
-    alt: "Describe image three",
+      "A Computer Network topology planning project for Binus University ( Created using a Hub Like design with a MLS switch system)",
+    image: "/CiscoTopology.png",
+    alt: "Network Topology Design",
+  },
+  {
+    date: "2026",
+    title: "Electus",
+    description:
+      "A mainly Software Architecture AI based aplication that scans and also read a person's CV using Ollama and Holland Code to see the aplicant's behaviour, skills and suitable work role",
+    image: "/ElectusImg.png",
+    alt: "Electus AI",
+  },
+  {
+    date: "2026",
+    title: "Kith & Kin",
+    description:
+      "A Community gathering app that gather niche hibbies and activities BISCOF (Binus Computer Science Festifal Top 16 Finalist) Kith and Kin enables you to Host an event, Join an Event, Monitor an event on one touch"
+      ,
+      
+    image: "/Kith&Kin-Image1.png",
+    alt: "Kith & Kin",
   },
 ];
 

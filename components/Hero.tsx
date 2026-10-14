@@ -71,7 +71,7 @@ export default function Hero() {
           className="mt-14 flex flex-col items-center gap-4 sm:flex-row"
         >
           <motion.a
-            href="/NicholasCarlen-resume.pdf"
+            href="/Nicholas Carlen-CV-Final.pdf"
             download
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
