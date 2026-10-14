@@ -2,21 +2,15 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { Badge } from "lucide-react";
-import { image } from "framer-motion/client";
 
-const PLACEHOLDER =
-  "data:image/svg+xml;utf8," +
-  encodeURIComponent(
-    `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
-      <rect width="800" height="600" fill="#0d1020"/>
-      <g stroke="#2563EB" stroke-opacity="0.35" fill="none" stroke-width="2">
-        <rect x="300" y="210" width="200" height="150" rx="12"/>
-        <circle cx="360" cy="260" r="16"/>
-        <path d="M300 340l60-50 45 35 30-25 65 40"/>
-      </g>
-    </svg>`
-  );
+interface JourneyItem {
+  date: string;
+  title: string;
+  badge?: string;
+  description: string;
+  image: string;
+  alt: string;
+}
 
 const stats = [
   { value: "3+", label: "Core Milestones" },
@@ -25,20 +19,20 @@ const stats = [
   { value: "100%", label: "Deterministic Flow" },
 ];
 
-const journeyData = [
+const journeyData: JourneyItem[] = [
   {
     date: "2025",
     title: "READ A PLATE",
     description:
-      "Read A plate was a first AI project with a java script backend project of mine, I was a project manager and also AI engeneer in this project",
+      "Read A Plate was my first AI project with a backend integration, where I served as both Project Manager and AI Engineer.",
     image: "/ReadAPlate.png",
-    alt: "A YOLO V8 project that involes scripting and computer vision",
+    alt: "A YOLOv8 project that involves scripting and computer vision",
   },
   {
     date: "2025",
     title: "Cisco Packet Tracer",
     description:
-      "A Computer Network topology planning project for Binus University ( Created using a Hub Like design with a MLS switch system)",
+      "A computer network topology planning project for BINUS University, created using an extended star design with a multilayer switch (MLS) system.",
     image: "/CiscoTopology.png",
     alt: "Network Topology Design",
   },
@@ -46,18 +40,16 @@ const journeyData = [
     date: "2026",
     title: "Electus",
     description:
-      "A mainly Software Architecture AI based aplication that scans and also read a person's CV using Ollama and Holland Code to see the aplicant's behaviour, skills and suitable work role",
+      "A software architecture and AI-based application that scans and analyzes a candidate's CV using Ollama and the Holland Code to evaluate behavior, skills, and suitable work roles.",
     image: "/ElectusImg.png",
     alt: "Electus AI",
   },
   {
     date: "2026",
     title: "Kith & Kin",
-    badge: " 🏆 BISCOF (Binus Computer Science Festifal Top 16 Finalist)",
+    badge: "🏆 BISCOF (BINUS Computer Science Festival Top 16 Finalist)",
     description:
-      "A Community gathering app that gather niche hibbies and activities. Kith and Kin enables you to Host an event, Join an Event, Monitor an event on one touch"
-      ,
-      
+      "A community gathering app that connects niche hobbies and activities. Kith & Kin enables you to host an event, join an event, and monitor an event with one touch.",
     image: "/Kith&Kin-Image1.png",
     alt: "Kith & Kin",
   },
@@ -69,7 +61,7 @@ export default function CSJourney() {
 
   return (
     <section
-      id="cs-journey"
+      id="CSjourney"
       className="relative mx-auto max-w-6xl px-6 pb-40 pt-0 md:pb-56"
     >
       {/* Header */}
@@ -164,9 +156,19 @@ export default function CSJourney() {
                   transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
                   className="w-full md:w-1/2"
                 >
-                  <span className="inline-block rounded-full bg-[#2563EB]/20 px-4 py-1.5 text-sm font-medium text-[#60A5FA]">
-                    {item.date}
-                  </span>
+                  <div className="flex flex-wrap items-center gap-2.5">
+                    <span className="inline-block rounded-full bg-[#2563EB]/20 px-4 py-1.5 text-sm font-medium text-[#60A5FA]">
+                      {item.date}
+                    </span>
+
+                    {/* Renders the badge when present */}
+                    {item.badge && (
+                      <span className="inline-block rounded-full border border-[#2563EB]/50 bg-[#2563EB]/15 px-3.5 py-1.5 text-xs font-semibold text-[#93C5FD] shadow-[0_0_15px_rgba(37,99,235,0.25)]">
+                        {item.badge}
+                      </span>
+                    )}
+                  </div>
+
                   <h3 className="mt-5 text-3xl font-bold tracking-tight text-white md:text-4xl">
                     {item.title}
                   </h3>
