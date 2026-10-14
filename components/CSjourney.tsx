@@ -53,7 +53,7 @@ const journeyData = [
   {
     date: "2026",
     title: "Kith & Kin",
-    Badge: " 🏆 BISCOF (Binus Computer Science Festifal Top 16 Finalist)",
+    badge: " 🏆 BISCOF (Binus Computer Science Festifal Top 16 Finalist)",
     description:
       "A Community gathering app that gather niche hibbies and activities. Kith and Kin enables you to Host an event, Join an Event, Monitor an event on one touch"
       ,
