@@ -61,7 +61,7 @@ export default function CSJourney() {
 
   return (
     <section
-      id="CSjourney"
+      id="cs-journey"
       className="relative mx-auto max-w-6xl px-6 pb-40 pt-0 md:pb-56"
     >
       {/* Header */}
