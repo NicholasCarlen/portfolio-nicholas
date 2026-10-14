@@ -82,7 +82,7 @@ export default function Hero() {
           </motion.a>
 
           <motion.a
-            href="#projects"
+            href="#CSjourney"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
             className="inline-flex items-center gap-2 rounded-lg border border-[#2563EB]/60 px-7 py-3.5 font-medium text-white transition-colors hover:border-[#2563EB] hover:bg-[#2563EB]/10"
